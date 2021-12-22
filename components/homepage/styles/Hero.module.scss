@@ -1,0 +1,53 @@
+@import '../../../styles/imports';
+
+.hero {
+	flex: 1;
+	display: flex;
+	background-image: url('/home/hero.jpg');
+	background-position: center center;
+	background-size: cover;
+	@include desktop {
+		background-position: center;
+	}
+
+	.overlay {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		background-color: rgba($color-primary, 0.75);
+		color: white;
+		justify-content: flex-end;
+		padding: 64px 24px;
+		height: 60vh;
+
+		@include desktop {
+			padding: 64px 124px;
+			height: 75vh;
+		}
+
+		.button {
+			display: flex;
+			height: 44px;
+			width: 180px;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			background-color: $color-secondary;
+			margin: 1rem 0;
+			@include btn-text-unselect;
+
+			&:hover {
+				background-color: white;
+				p {
+					color: black;
+				}
+			}
+			p {
+				font-weight: 700;
+				color: white;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}

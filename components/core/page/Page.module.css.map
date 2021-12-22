@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAC;EACL,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,KAAK;CACjB",
+    "sources": [
+        "Page.module.scss",
+        "../../../styles/_imports.scss",
+        "../../../styles/utilities/_mixins.scss",
+        "../../../styles/utilities/_partials.scss"
+    ],
+    "names": [],
+    "file": "Page.module.css"
+}

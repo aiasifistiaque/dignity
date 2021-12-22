@@ -1,0 +1,79 @@
+@import '../../../styles/imports';
+
+@mixin container($dir: column, $img-pos: flex-start) {
+	display: flex;
+	margin: 64px 24px;
+	flex-direction: $dir;
+	@include desktop {
+		margin: 128px;
+		flex-direction: row;
+	}
+
+	.image {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+
+		@include desktop {
+			justify-content: $img-pos;
+			margin-bottom: 0;
+		}
+
+		img {
+			width: 250px;
+			height: auto;
+			max-height: 600px;
+			object-fit: contain;
+			@include desktop {
+				width: 400px;
+			}
+		}
+	}
+	.text {
+		flex: 1;
+		text-align: center;
+		margin: 32px 0;
+		@include desktop {
+			text-align: left;
+			align-self: flex-end;
+			margin: 16px 0;
+		}
+
+		h2 {
+			margin-bottom: 32px;
+			letter-spacing: 0.5px;
+			border-bottom: 4px solid $color-secondary;
+			padding-bottom: 4px;
+			//border-radius: 2px;
+		}
+		p {
+			line-height: 1.8;
+			@include desktop {
+				line-height: 2;
+			}
+		}
+	}
+}
+
+.chairmanContainer {
+	@include container(column);
+	.text {
+		@include desktop {
+			h2 {
+				margin-right: -128px;
+			}
+		}
+	}
+}
+
+.mdContainer {
+	@include container(column-reverse, flex-end);
+	.text {
+		h2 {
+			@include desktop {
+				margin-left: -128px;
+				padding-left: 128px;
+			}
+		}
+	}
+}
