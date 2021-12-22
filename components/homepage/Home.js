@@ -5,6 +5,8 @@ import ChairmanMessage from './ChairmanMessage';
 import styles from './styles/Home.module.css';
 import MdMessage from './MdMessage';
 import HomeMeta from './HomeMeta';
+import Services from './Services';
+import Team from './Team';
 
 const Home = () => {
 	return (
@@ -13,7 +15,9 @@ const Home = () => {
 			<div className={styles.container}>
 				<Hero />
 				<ChairmanMessage />
+				<Services />
 				<MdMessage />
+				<Team />
 			</div>
 		</Page>
 	);

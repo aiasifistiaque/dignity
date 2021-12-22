@@ -11,9 +11,17 @@ const Page = ({ children }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main className={styles.main}>{children}</main>
-			<footer>
+			<footer
+				style={{
+					backgroundColor: 'whitesmoke',
+					display: 'flex',
+					justifyContent: 'center',
+					padding: 8,
+					borderTop: '1px solid rgba(0,0,0,.1)',
+				}}>
 				<a
-					href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
+					style={{ textAlign: 'center', letterSpacing: '3px', fontSize: 14 }}
+					href='http://thinkcrypt.io'
 					target='_blank'
 					rel='noopener noreferrer'>
 					Powered by thinkcrypt.io
