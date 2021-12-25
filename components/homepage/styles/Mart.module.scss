@@ -1,0 +1,200 @@
+@import '../../../styles/imports';
+
+%p-header {
+	background-color: #4b4f7c;
+	color: white;
+	margin: 32px 0;
+	margin-left: -64px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	text-align: right;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 32px;
+	text-transform: uppercase;
+	width: 80vw;
+
+	h3 {
+		font-weight: 700;
+		letter-spacing: 1px;
+	}
+	@include desktop {
+		margin: 64px 0;
+		margin-left: -128px;
+		width: 50vw;
+	}
+}
+
+.section {
+	margin: 64px 24px;
+	h2 {
+		text-align: center;
+	}
+	@include desktop {
+		margin: 128px;
+	}
+	.header {
+		@extend %p-header;
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	@include desktop {
+		flex-direction: row;
+	}
+
+	.image {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+
+		@include desktop {
+			justify-content: center;
+			margin-bottom: 0;
+		}
+
+		img {
+			width: auto;
+			height: 300px;
+
+			object-fit: contain;
+			@include desktop {
+				width: auto;
+				height: 500px;
+			}
+		}
+	}
+	.text {
+		flex: 1;
+		text-align: center;
+		margin: 32px 0;
+		@include desktop {
+			text-align: left;
+			align-self: center;
+			margin: 16px 0;
+		}
+
+		h2 {
+			margin-bottom: 32px;
+			letter-spacing: 0.5px;
+			border-bottom: 4px solid $color-secondary;
+			padding-bottom: 4px;
+			//border-radius: 2px;
+		}
+		p {
+			line-height: 1.8;
+			@include desktop {
+				line-height: 2;
+			}
+		}
+	}
+}
+
+.grayButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 44px;
+	width: 256px;
+	@include btn-text-unselect;
+	background-color: whitesmoke;
+	border-radius: 4px;
+	transition: 0.3s;
+	margin: 4rem auto 0 auto;
+
+	@include desktop {
+		margin: 4rem 0 0 0;
+	}
+
+	cursor: pointer;
+	p {
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	&:hover {
+		background-color: darken(whitesmoke, 10%);
+	}
+}
+
+.healthcare {
+	.headerContainer {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex: 1;
+	}
+	.header {
+		background-color: #4b4f7c;
+		color: white;
+		margin: 32px 0;
+		margin-top: 0;
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+		text-align: right;
+		height: 44px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 0 32px;
+		text-transform: uppercase;
+		width: 80vw;
+
+		h3 {
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
+		@include desktop {
+			margin: 64px 0;
+			width: 50vw;
+			margin-top: 0;
+		}
+	}
+	.members {
+		display: flex;
+		margin: 2rem 32px;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		@include desktop {
+			margin: 2rem 128px;
+		}
+
+		.member {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 120px;
+			margin: 1rem 0.5rem;
+			justify-content: center;
+			align-self: flex-start;
+			text-align: center;
+			@include desktop {
+				width: 250px;
+			}
+			h6 {
+				margin-bottom: 0.25rem;
+				font-size: 0.9rem;
+			}
+			p {
+				font-size: 0.7rem;
+				line-height: 1.3;
+			}
+			img {
+				height: 120px;
+				width: 120px;
+				margin-bottom: 1rem;
+				object-fit: contain;
+
+				@include desktop {
+					height: 130px;
+					width: 130px;
+				}
+			}
+		}
+	}
+}

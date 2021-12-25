@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './Page.module.css';
+import Header from '../../nav/header/Header';
 
 const Page = ({ children }) => {
 	return (
@@ -10,6 +11,7 @@ const Page = ({ children }) => {
 				<meta name='description' content='Dignity International Agency' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
+			<Header />
 			<main className={styles.main}>{children}</main>
 			<footer
 				style={{
