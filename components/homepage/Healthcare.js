@@ -9,31 +9,25 @@ const Healthcare = () => {
 					<h3>Health Care Unit</h3>
 				</div>
 			</div>
+			<div className={styles.subText}>
+				<h5>
+					Our aim is to set the standard for a practical and affordable service
+					to industries to manage occupational health ad safety within their
+					specific working environments. Our Mission is to provide professional
+					innovative occupational health and safety solution.
+				</h5>
+			</div>
+
 			<div className={styles.members}>
-				<Member
-					image='/team.png'
-					designation='Asst. Professor, Surgery Department'
-					education='Rangpur Medical College & Hospital'>
-					Dr. Shah Shahjada Pintu
-				</Member>
-				<Member
-					image='/team.png'
-					designation='Asst. Professor, Surgery Department'
-					education='Rangpur Medical College & Hospital'>
-					Dr. Shah Shahjada Pintu
-				</Member>
-				<Member
-					image='/team.png'
-					designation='Asst. Professor, Surgery Department'
-					education='Rangpur Medical College & Hospital'>
-					Dr. Shah Shahjada Pintu
-				</Member>
-				<Member
-					image='/team.png'
-					designation='Asst. Professor, Surgery Department'
-					education='Rangpur Medical College & Hospital'>
-					Dr. Shah Shahjada Pintu
-				</Member>
+				{data.map((item, i) => (
+					<Member
+						key={i}
+						image={item.image}
+						designation={item.position}
+						education={item.department}>
+						{item.name}
+					</Member>
+				))}
 			</div>
 		</div>
 	);
@@ -49,5 +43,36 @@ const Member = ({ image, children, designation, education }) => {
 		</div>
 	);
 };
+
+const data = [
+	{
+		id: 0,
+		name: 'Dr. Shah Shahjada Pintu',
+		position: 'Asst. Professor, Surgery Department',
+		image: '/dignity/doctor/dr1.jpg',
+		department: 'Rangpur Medical College & Hospital',
+	},
+	{
+		id: 1,
+		name: 'Dr. Abu Hanif Pavel',
+		position: 'Asst. Professor, Surgery Department',
+		image: '/dignity/doctor/dr2.jpg',
+		department: 'Rangpur Medical College & Hospital',
+	},
+	{
+		id: 2,
+		name: 'Dr. Nure Aftab Siddique',
+		position: 'Register, Surgery Department',
+		image: '/dignity/doctor/dr3.jpg',
+		department: 'Rangpur Medical College & Hospital',
+	},
+	{
+		id: 3,
+		name: 'Dr. S M Kamal',
+		position: 'Asst. Register, Surgery Department',
+		image: '/dignity/doctor/dr4.jpg',
+		department: 'Rangpur Medical College & Hospital',
+	},
+];
 
 export default Healthcare;

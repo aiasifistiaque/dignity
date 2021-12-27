@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles/Mart.module.css';
+import Link from 'next/link';
 
 const MartHome = () => {
 	return (
@@ -20,10 +21,11 @@ const MartHome = () => {
 							supply solution house
 						</p>
 					</div>
-
-					<div className={styles.grayButton}>
-						<p>See all products</p>
-					</div>
+					<Link href='/mart-fashion'>
+						<div className={styles.grayButton}>
+							<p>See all products</p>
+						</div>
+					</Link>
 				</div>
 			</div>
 		</div>

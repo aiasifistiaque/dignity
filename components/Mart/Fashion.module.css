@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700,800,800i,900i&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .header {
+  height: 50px;
+  width: 250px;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.container .header p {
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: auto;
+  letter-spacing: 2px;
+}
+
+.container .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .container .items {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: 1rem;
+  }
+}
+
+.container .items img {
+  height: 200px;
+  width: 41vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px;
+}
+
+@media (min-width: 1008px) {
+  .container .items img {
+    height: 400px;
+    width: 250px;
+    margin-bottom: 2rem;
+  }
+}
+/*# sourceMappingURL=Fashion.module.css.map */

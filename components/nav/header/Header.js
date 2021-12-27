@@ -23,18 +23,18 @@ const Header = () => {
 				</div>
 				<div className={styles.navItems}>
 					<Item href='/'>Home</Item>
-					<Item href='/'>About Us</Item>
-					<Item href='/'>Why hire us</Item>
+					<Item href='/about'>About Us</Item>
+					<Item href='/why-hire-us'>Why hire us</Item>
 				</div>
 			</div>
 		</>
 	);
 };
 
-const Item = ({ href, children }) => {
+const Item = ({ href, children, onClick }) => {
 	return (
 		<Link href={href}>
-			<div className={styles.item}>
+			<div className={styles.item} onClick={onClick}>
 				<p>{children}</p>
 			</div>
 		</Link>
@@ -56,9 +56,15 @@ const Dropdown = ({ active, off }) => {
 				<img src='/icons/close.png' alt='x' />
 			</div>
 			<div className={styles.ddItems}>
-				<Item href='/'>Home</Item>
-				<Item href='/'>About Us</Item>
-				<Item href='/'>Why hire us</Item>
+				<Item href='/' onClick={off}>
+					Home
+				</Item>
+				<Item href='/about' onClick={off}>
+					About Us
+				</Item>
+				<Item href='/why-hire-us' onClick={off}>
+					Why hire us
+				</Item>
 			</div>
 		</motion.div>
 	);

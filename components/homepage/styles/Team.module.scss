@@ -40,6 +40,9 @@
 				width: 120px;
 				margin-bottom: 1rem;
 				object-fit: contain;
+				border-radius: 999px;
+				object-fit: cover;
+				object-position: top;
 
 				@include desktop {
 					height: 200px;

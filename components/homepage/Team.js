@@ -7,42 +7,15 @@ const Team = () => {
 			<h2>Our Team</h2>
 
 			<div className={styles.members}>
-				<Member
-					image='/team.png'
-					designation='Head, Information Technology'
-					education='Engineer, BSc'>
-					Sayed Tanvir Alam
-				</Member>
-				<Member
-					image='/team.png'
-					designation='Head, Information Technology'
-					education='Engineer, BSc'>
-					Sayed Tanvir Alam
-				</Member>
-				<Member
-					image='/team.png'
-					designation='Head, Information Technology'
-					education='Engineer, BSc'>
-					Sayed Tanvir Alam
-				</Member>
-				<Member
-					image='/team.png'
-					designation='Head, Information Technology'
-					education='Engineer, BSc'>
-					Sayed Tanvir Alam
-				</Member>
-				<Member
-					image='/team.png'
-					designation='Head, Information Technology'
-					education='Engineer, BSc'>
-					Sayed Tanvir Alam
-				</Member>
-				<Member
-					image='/team.png'
-					designation='Head, Information Technology'
-					education='Engineer, BSc'>
-					Sayed Tanvir Alam
-				</Member>
+				{data.map((item, i) => (
+					<Member
+						key={i}
+						image={item.image}
+						designation={item.position}
+						education={item.education}>
+						{item.name}
+					</Member>
+				))}
 			</div>
 		</div>
 	);
@@ -58,5 +31,64 @@ const Member = ({ image, children, designation, education }) => {
 		</div>
 	);
 };
+
+const data = [
+	{
+		id: 0,
+		name: 'Kamruzzaman Chowdhury Tuhin',
+		position: 'Chairman',
+		image: '/dignity/team/k1.jpg',
+		education: '',
+	},
+	{
+		id: 1,
+		name: 'Shihab Chowdhury',
+		position: 'Managing Director',
+		image: '/dignity/team/s2.jpg',
+		education: 'Engineer, BSc(IUB), MBA(DU)',
+	},
+	{
+		id: 2,
+		name: 'Sayeed Tanvir Alam',
+		position: 'International Relationship Manager',
+		image: '/dignity/team/t1.jpg',
+		education: 'Engineer, BSc',
+	},
+	{
+		id: 3,
+		name: 'Muhammad Asif Hossain',
+		position: 'Head, Information Technology',
+		image: '/dignity/team/a1.jpg',
+		education: 'Engineer, BSc',
+	},
+	{
+		id: 4,
+		name: 'Debashish Sarker',
+		position: 'Head, Human Resource',
+		image: '/dignity/team/d1.jpg',
+		education: 'Engineer, MSc',
+	},
+	{
+		id: 5,
+		name: 'Sanjish Saha',
+		position: 'Administrative Officer',
+		image: '/dignity/team/s1.jpg',
+		education: 'Engineer, BSc',
+	},
+	{
+		id: 6,
+		name: 'Soyab Mucktakim',
+		position: 'Account Officer',
+		image: '/dignity/team/s1.jpg',
+		education: 'Master’s In Accounting',
+	},
+	{
+		id: 7,
+		name: 'Asif Istiaque',
+		position: 'Senior Full Stack Developer, IT',
+		image: '/dignity/team/a2.jpeg',
+		education: 'Engineer, MSc',
+	},
+];
 
 export default Team;

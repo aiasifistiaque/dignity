@@ -10,14 +10,14 @@ const Services = () => {
 				globally.
 			</h5>
 			<div className={styles.services}>
-				<Service src='/service.png'>Mart Fashion</Service>
-				<Service src='/service.png'>
+				<Service src='/services/1.png'>Mart Fashion</Service>
+				<Service src='/services/2.png'>
 					Human resource Consultants {`&`} Suppliers
 				</Service>
-				<Service src='/service.png'>Dignity IT Solution</Service>
-				<Service src='/service.png'>Health Care Unit</Service>
-				<Service src='/service.png'>Neer - A Volunteer Organization</Service>
-				<Service src='/service.png'>Dignity Export Import House</Service>
+				<Service src='/services/3.png'>Dignity IT Solution</Service>
+				<Service src='/services/4.png'>Health Care Unit</Service>
+				<Service src='/services/5.png'>Neer - A Volunteer Organization</Service>
+				<Service src='/services/6.png'>Dignity Export Import House</Service>
 			</div>
 		</div>
 	);

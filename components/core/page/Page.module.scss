@@ -4,3 +4,89 @@
 	display: flex;
 	min-height: 100vh;
 }
+
+.inner {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	.cover {
+		display: flex;
+		//background-image: url('/cover.jpg');
+		height: 20vh;
+		background-position: center;
+		background-size: cover;
+		align-items: center;
+		justify-content: center;
+		@include desktop {
+			height: 40vh;
+		}
+
+		.detail {
+			color: white;
+			background-color: rgba(black, 0.4);
+			backdrop-filter: blur(10px);
+			padding: 16px 44px;
+			border-radius: 2px;
+			@include desktop {
+				padding: 24px 128px;
+			}
+			h2 {
+				text-transform: uppercase;
+				font-weight: 700;
+				letter-spacing: 2px;
+				line-height: 1;
+			}
+		}
+	}
+	.children {
+		margin: 32px 24px;
+		@include desktop {
+			margin: 44px 128px;
+		}
+		p {
+			margin-bottom: 16px;
+			line-height: 1.8;
+			letter-spacing: 0.15px;
+			font-size: 0.9rem;
+			@include desktop {
+				font-size: 1rem;
+				margin-bottom: 24px;
+			}
+		}
+		h5 {
+			font-weight: 600;
+			margin-top: 2rem;
+			margin-bottom: 0.25rem;
+			letter-spacing: 0.05px;
+			text-transform: uppercase;
+			@include desktop {
+				margin-top: 3rem;
+			}
+		}
+		li {
+			margin-bottom: 0.5rem;
+			line-height: 1.8;
+			letter-spacing: 0.15px;
+			font-size: 0.9rem;
+			@include desktop {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+.default {
+	background-image: url('/cover.jpg');
+}
+
+.about {
+	background-image: url('/cover.jpg');
+}
+
+.whu {
+	background-image: url('/cover.jpg');
+}
+
+.mart {
+	background-image: url('/cover.jpg');
+}
