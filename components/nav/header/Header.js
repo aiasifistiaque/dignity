@@ -11,13 +11,17 @@ const Header = () => {
 			<Dropdown active={dropdown} off={() => setDropdown(false)} />
 
 			<div className={styles.nav}>
-				<div className={styles.brand}>
-					<img src='/icon.png' alt='icon' />
-					<div className={styles.brandName}>
-						<h3>Dignity</h3>
-						<h4>International Agency</h4>
+				<Link href='/'>
+					<div className={styles.brand}>
+						<img src='/icon.png' alt='icon' />
+
+						<div className={styles.brandName}>
+							<h3>Dignity</h3>
+							<h4>International Agency</h4>
+						</div>
 					</div>
-				</div>
+				</Link>
+
 				<div className={styles.toggle} onClick={() => setDropdown(true)}>
 					<img src='/icons/toggle.png' alt='toggle' />
 				</div>
