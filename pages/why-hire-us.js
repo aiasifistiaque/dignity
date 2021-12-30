@@ -12,7 +12,7 @@ const WhyHireUs = () => {
 						his responsibilities and has the high spirits to excel and execute
 						their roles with a positive attitude. It is teamwork that finally
 						bears the fruit and pays the benefits. Every member of the
-						{`"Dignity
+						{` "Dignity
 						International Agency"`}
 						- Overseas Employment Team is talented and dedicated to his
 						responsibilities. And they are ready to serve with a smile.
@@ -113,7 +113,7 @@ const WhyHireUs = () => {
 				<Item title='SELECTION'>
 					Selection is being done as per instruction by our valuable clients,
 					There are six types of interview selection tools available with
-					{`"Dignity International Agency"`}.
+					{` "Dignity International Agency"`}.
 				</Item>
 				<Item title='Face to Face Interviews'>
 					<ul>

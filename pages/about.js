@@ -32,7 +32,7 @@ const about = () => {
 					Bangladesh manpower that although our workers. Our process of
 					recruiting is based on significantly a refined and scientific approach
 					which differs from others in the field
-					{`"Dignity Inteingtignel Agency"`}
+					{` "Dignity Inteingtignel Agency"`}
 					is a well-established and one of the leading manpower recruiting
 					agencies made up of people with sufficient experience, tested
 					capabilities, dedication, and above all confidence.
@@ -44,7 +44,7 @@ const about = () => {
 					human resources. Your inquiry will be nourished with great pleasure
 					and demand will be met with profound success It is earnestly hoped
 					that whenever you have a demand for manpower you will kindly turn to
-					{`"Dignity International Agency"`} to extend us an opportunity to
+					{` "Dignity International Agency"`} to extend us an opportunity to
 					serve with a commitment and differences.
 				</p>
 			</InnerPages>
